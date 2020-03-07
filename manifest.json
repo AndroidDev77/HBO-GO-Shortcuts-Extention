@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "HBO Go Shortcuts",
+    "description": "Add's shortcuts to HBO Go. L/R Arrow: Skip 10 seconds, Up/Down: Change Volume, Space: Pause, C: Skip Commercials",
+    "version": "0.1",
+    "icons": {
+        "128": "icon.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://play.hbogo.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["tabs"]
+}
