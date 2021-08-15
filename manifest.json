@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "HBO Go Shortcuts",
-    "description": "Add's shortcuts to HBO Go. L/R Arrow: Skip 10 seconds, Up/Down: Change Volume, Space: Pause, C: Skip Commercials",
-    "version": "0.1",
+    "name": "HBO Max/Go Shortcuts",
+    "description": "Add's shortcuts to HBO Max/Go. L/R Arrow: Skip 10 seconds, Up/Down: Change Volume, Space: Pause, C: Skip Commercials",
+    "version": "0.2",
     "icons": {
         "128": "icon.png"
     },
@@ -11,7 +11,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://play.hbogo.com/*"],
+            "matches": ["https://play.hbogo.com/*", "https://play.hbomax.com/*"],
             "js": ["content.js"]
         }
     ],

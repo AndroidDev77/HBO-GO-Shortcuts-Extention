@@ -19,7 +19,7 @@ clamp = (num, min, max) => {
 const dev = false;
 
 // url with video/media in it
-const mediaUrlRegex = RegExp('^https://play.hbogo.com/(feature|episode|extra|series)/.+$');
+const mediaUrlRegex = RegExp('^https://play.(hbomax|hbogo).com/(feature|episode|extra|series)/.+$');
 
 // elements
 let videoElement = null; // video element
